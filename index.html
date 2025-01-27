@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 15px 25px;
+  margin: 7px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #c4bdd1;
+  color: light pink;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b8d7de;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #a7cdd6;
+  padding: 20px;
+}
+</style>
+<body>
+<header align=center>
+<h3>Using CSS and HTML in Forms making</h3>
+</header>
+
+<div>
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+	<label for="number">Enter your Mobile Number</label>
+<input type="text" name="number" maxlength="10" id="number" placeholder="Mobile number"required/><br><br>
+<label for="Password">Enter your Password:</label>
+<input type="text" id="Password" name="Password" maxlength="6" placeholder="Password"required/><br><br>
+<label for="confirmPassword">Confirm your Password:</label>
+<input type="text" id="Confirm Password" name="Confirm Password" maxlength="6" placeholder="Confirm Password"required/><br><br>
+<label for="email">Enter your email:</label>
+<input type="text" id="email" name="email" placeholder="email"required/><br><br>
+<label>Enter your gender:</label><br>
+<div>
+<input type="radio" name="gender" value="male" id="male"required/>
+<label for="male">Male</label>
+<input type="radio" name="gender" value="female" id="female"/>
+<label for="female">Female</label>
+<input type="radio" name="gender" value="others" id="others"/>
+<label for="others">Others</label>
+</div><br>
+
+    <label for="district">District</label>
+    <select id="District" name="District">
+	  <option value="Alluri Sitharama Raju">Alluri Sitharama Raju</option>
+  <option value="Srikakulam">Srikakulam</option>
+  <option value="Parvathipuram Manyam">Parvathipuram Manyam</option>
+  <option value="Vizianagaram">Vizianagaram</option>
+  <option value="Visakhapatnam">Visakhapatnam</option>
+  <option value="Anakapalli">Anakapalli</option>
+  <option value="Kakinada">Kakinada</option>
+  <option value="East Godavari">East Godavari</option>
+  <option value="Dr. B. R. Ambedkar Konaseema">Dr. B. R. Ambedkar Konaseema</option>
+  <option value="Eluru">Eluru</option>
+  <option value="West Godavari">West Godavari</option>
+  <option value="NTR">NTR</option>
+  <option value="Krishna">Krishna</option>
+  <option value="Palnadu">Palnadu</option>
+  <option value="Guntur">Guntur</option>
+  <option value="Bapatla">Bapatla</option>
+   <option value="Prakasam">Prakasam</option>
+  <option value="Sri Potti Sriramulu Nellore">Sri Potti Sriramulu Nellore</option>
+  <option value="Kurnool">Kurnool</option>
+  <option value="Nandyal">Nandyal</option>
+  <option value="Anantapur">Anantapur</option>
+  <option value="Sri Sathya Sai">Sri Sathya Sai</option>
+  <option value="Kadapa">Kadapa</option>
+  <option value="Annamayya">Annamayya</option>
+  <option value="Tirupati">Tirupati</option>
+  <option value="Chittoor">Chittoor</option>
+  </select><br><br>
+<label for="address">Enter your Address:</label>
+<input type="text" id="address" name="address" placeholder="Enter your address">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
